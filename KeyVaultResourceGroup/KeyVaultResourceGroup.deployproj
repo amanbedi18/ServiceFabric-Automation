@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>b94983bd-339f-4e77-81ea-39aad1237737</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkIdentifier>Deployment</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>1.0</TargetFrameworkVersion>
+    <PrepareForBuildDependsOn>
+    </PrepareForBuildDependsOn>
+  </PropertyGroup>
+  <Import Condition=" Exists('Deployment.targets') " Project="Deployment.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- vertag<:>start tokens<:>maj.min -->
+  <Import Condition=" Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets') " Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets" />
+  <!-- vertag<:>end -->
+  <ItemGroup>
+    <Content Include="Deploy-Dev.ps1" />
+    <Content Include="KeyVault.json" />
+    <None Include="Deployment.targets">
+      <Visible>False</Visible>
+    </None>
+    <Content Include="Deploy-AzureResourceGroup.ps1" />
+    <Content Include="Parameters\Dev\ASF.KeyVault.parameters.json" />
+    <Content Include="Scripts\KeyVault\New-ServiceFabricClusterCertificate.ps1" />
+    <Content Include="Scripts\KeyVault\Set-KeyVaultSecret.ps1" />
+    <Content Include="Scripts\KeyVault\Set-ServiceFabricClusterCertificate.ps1" />
+    <Content Include="Scripts\MicrosoftAzureServiceFabric-AADHelpers\CleanupApplications.ps1" />
+    <Content Include="Scripts\MicrosoftAzureServiceFabric-AADHelpers\CleanupUser.ps1" />
+    <Content Include="Scripts\MicrosoftAzureServiceFabric-AADHelpers\Common.ps1" />
+    <Content Include="Scripts\MicrosoftAzureServiceFabric-AADHelpers\Examples.txt" />
+    <Content Include="Scripts\MicrosoftAzureServiceFabric-AADHelpers\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
+    <Content Include="Scripts\MicrosoftAzureServiceFabric-AADHelpers\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll" />
+    <Content Include="Scripts\MicrosoftAzureServiceFabric-AADHelpers\Microsoft.IdentityModel.Clients.ActiveDirectory.xml" />
+    <Content Include="Scripts\MicrosoftAzureServiceFabric-AADHelpers\ReadMe.txt" />
+    <Content Include="Scripts\MicrosoftAzureServiceFabric-AADHelpers\SetupApplications.ps1" />
+    <Content Include="Scripts\MicrosoftAzureServiceFabric-AADHelpers\SetupUser.ps1" />
+    <Content Include="Scripts\MicrosoftAzureServiceFabric-AADHelpers\Troubleshoot connecting to cluster with AAD.DOCX" />
+  </ItemGroup>
+  <Target Name="GetReferenceAssemblyPaths" />
+</Project>

@@ -1,0 +1,2 @@
+C:\Users\amanbe\Desktop\Service-Fabric\TML.ConnectedCar.Deploy\KeyVaultResourceGroup\obj\Debug\KeyVaultResourceGroup.deployproj.CoreCompileInputs.cache
+C:\Users\amanbe\Desktop\Service-Fabric\KeyVaultResourceGroup\obj\Debug\KeyVaultResourceGroup.deployproj.CoreCompileInputs.cache

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "ASFResourceGroup", "ASFResourceGroup\ASFResourceGroup.deployproj", "{15D6B725-6927-4109-BF39-9B4BEAF06E50}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "KeyVaultResourceGroup", "KeyVaultResourceGroup\KeyVaultResourceGroup.deployproj", "{B94983BD-339F-4E77-81EA-39AAD1237737}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15D6B725-6927-4109-BF39-9B4BEAF06E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15D6B725-6927-4109-BF39-9B4BEAF06E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15D6B725-6927-4109-BF39-9B4BEAF06E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15D6B725-6927-4109-BF39-9B4BEAF06E50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94983BD-339F-4E77-81EA-39AAD1237737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94983BD-339F-4E77-81EA-39AAD1237737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94983BD-339F-4E77-81EA-39AAD1237737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94983BD-339F-4E77-81EA-39AAD1237737}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmNodeTypeSkuNames": {
+      "value": [
+        "Standard_D2_v2",
+        "Standard_D2_v2",
+        "Standard_D2_v2",
+        "Standard_D2_v2",
+        "Standard_D2_v2"
+      ]
+    },
+    "clusterName": {
+      "value": ""
+    },
+    "certificateThumbprint": {
+      "value": ""
+    },
+    "sourceVaultResourceId": {
+      "value": ""
+    },
+    "certificateUrlValue": {
+      "value": ""
+    },
+    "aadTenantId": {
+      "value": ""
+    },
+    "aadClusterApplicationId": {
+      "value": ""
+    },
+    "aadClientApplicationId": {
+      "value": ""
+    },
+    "adminPassword": {
+      "value": ""
+    },
+    "virtualNetworkName": {
+      "value": ""
+    },
+    "supportLogStorageAccountName": {
+      "value": ""
+    },
+    "diagnosticsStorageAccountName": {
+      "value": ""
+    },
+    "adminUserName": {
+      "value": ""
+    },
+    "vmNodeTypeStorageAccountNames": {
+      "value": [ "", "", "", "", "" ]
+    },
+    "serviceName": {
+      "value": ""
+    }
+  }
+}
