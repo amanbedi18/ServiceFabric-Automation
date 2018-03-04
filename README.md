@@ -203,4 +203,14 @@ This will attach each Virtual Machine Scale set as a node type to the Service fa
 
 4. After successfully logging into the cluster explorer one can view the node health status.
 
-### Optional : Use the 
+### Optional : Custom Load Balancing Rules
+
+After deployment of all Azure resources, one can add custom load balancing rules for the load balancers over and above the default ones that were configured by the ARM template for both public and private load balancers. (One can also maintain custom rules in ARM template but the following PowerShell script will help to achieve the same as a post deployment step).
+
+1. Execute Service-Fabric\LoadBalancerRules\ilbprobeconfigs.ps1 with the following arguments:
+
+* resourceGroup = Name of the resource group
+
+Also custom ports, probes and other properties for the load balancing rules can be templatized and fed as configurations for the script to deploy multiple rules against the same.
+
+**** 
